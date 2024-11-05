@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Kz-du-IbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384" y="166"/>
+            <point key="canvasLocation" x="1818" y="535"/>
         </scene>
         <!--Expenses-->
         <scene sceneID="SKb-GE-NPa">
@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLd-iJ-wTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="535"/>
+            <point key="canvasLocation" x="-863" y="535"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="rFu-o0-2AX">
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFN-jP-jtc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384" y="-500"/>
+            <point key="canvasLocation" x="479" y="535"/>
         </scene>
         <!--Garden-->
         <scene sceneID="odF-hB-OFZ">
@@ -63,14 +63,25 @@
                     <view key="view" contentMode="scaleToFill" id="YfQ-mx-Prm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Garden" translatesAutoresizingMaskIntoConstraints="NO" id="GcC-8S-Att">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RR8-oT-ozN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RR8-oT-ozN" firstAttribute="bottom" secondItem="GcC-8S-Att" secondAttribute="bottom" id="2Mr-Rg-Sqo"/>
+                            <constraint firstItem="GcC-8S-Att" firstAttribute="leading" secondItem="RR8-oT-ozN" secondAttribute="leading" id="9EX-Qv-SCU"/>
+                            <constraint firstItem="RR8-oT-ozN" firstAttribute="trailing" secondItem="GcC-8S-Att" secondAttribute="trailing" id="BUu-uw-YUe"/>
+                            <constraint firstItem="GcC-8S-Att" firstAttribute="top" secondItem="RR8-oT-ozN" secondAttribute="top" id="Y8I-bv-mGD"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Garden" image="tree" catalog="system" id="8t4-JR-77v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bls-rd-5Dx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="-884"/>
+            <point key="canvasLocation" x="-2164" y="535"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ogW-G7-1Vl">
@@ -94,6 +105,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Garden" width="726" height="1322"/>
         <image name="list.bullet.clipboard" catalog="system" width="98" height="128"/>
         <image name="medal" catalog="system" width="121" height="128"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
